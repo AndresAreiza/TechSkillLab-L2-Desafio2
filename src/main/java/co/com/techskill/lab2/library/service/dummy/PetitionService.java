@@ -74,7 +74,7 @@ public class PetitionService {
                 )
                 .timeout(Duration.ofSeconds(5))
                 .transformDeferred(CircuitBreakerOperator.of(circuitBreaker))
-                .retry(3 )
+                .retry(3)
                 .onErrorResume(e -> Mono.just("Petition failed: " + id + " - " + e.getMessage()));
 
     }
