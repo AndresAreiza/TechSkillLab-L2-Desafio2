@@ -27,7 +27,7 @@ public class LibraryApplication {
 		petitionService.processPetition("09ef7d35-d").subscribe(System.out::println);
 		petitionService.processPetition("0e6a31b1-f").subscribe(System.out::println);
 		petitionService.processPetition("4ebc9aa6-f").subscribe(System.out::println);
-		// Mono que no existe:
+		// Mono que no existe
 		petitionService.processPetition("abcdefg0-1").subscribe(System.out::println);
 	}
 }
